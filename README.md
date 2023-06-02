@@ -1,16 +1,22 @@
 ### Hi there 👋
 
-<!--
-**ianlewis/ianlewis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I work as a Developer Advocate for [Google Cloud](https://cloud.google.com/) in Tokyo, Japan.
 
-Here are some ideas to get you started:
+😄 My pronouns are he/him.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔭 My current interests are in Cloud Native Security and [Software Supply Chain
+Security](https://en.wikipedia.org/wiki/Software_supply_chain). I work on
+tooling for [SLSA](https://slsa.dev/) supply chain security framework.
+Previously, I worked on sandboxing for Cloud Native workflows
+[gVisor](https://gvisor.dev/).
+
+I'm particularly interested in dynamics between trusted/untrusted execution
+contexts.
+
+💬 Ask me about sandboxing, software supply chain security, and Cloud Native
+security.
+
+⚡ My current weekend project is a set of tools to deal with
+[todos](https://github.com/ianlewis/todos) in code.
+
+📫 You reach me via email (the best DM): ianmlewis@gmail.com
