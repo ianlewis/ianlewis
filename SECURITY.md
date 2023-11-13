@@ -1,5 +1,8 @@
 # Security Policy
 
+This document describes the security policy that applies to all repos under
+https://github.com/ianlewis.
+
 ## Supported Versions
 
 Security updates for my repositiories will be applied the most recent major
