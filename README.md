@@ -1,4 +1,4 @@
-### Hi there 👋
+# Hi there 👋
 
 I work as a Developer Advocate for [Google Cloud](https://cloud.google.com/) in Tokyo, Japan.
 
