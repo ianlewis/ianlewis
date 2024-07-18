@@ -8,12 +8,17 @@ https://github.com/ianlewis.
 Security updates for my repositiories will be applied the most recent major
 version and its minor versions.
 
-For example if 2.0.0 is the latest version.
+For example if 2.2.0 is the latest version:
 
-| Version  | Supported          |
-| -------- | ------------------ |
-| >= 2.0.0 | :white_check_mark: |
-| < 2.0.0  | :x:                |
+| Version | Supported          |
+| ------- | ------------------ |
+| v2.2.x  | :white_check_mark: |
+| v2.1.x  | :white_check_mark: |
+| v2.0.x  | :white_check_mark: |
+| < 2.0.0 | :x:                |
+
+However, if the repository has not made a stable release (e.g. the latest
+release is < v1.0.0) then only the most latest minor version will be patched.
 
 ## Reporting a Vulnerability
 
