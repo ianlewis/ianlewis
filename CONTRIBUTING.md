@@ -23,23 +23,7 @@ create an issue.
 
 ## Before you begin
 
-### Sign our Contributor License Agreement
-
-Contributions most of my repositories must be accompanied by a [Contributor License
-Agreement] (CLA). This is part of the contributon process for projects laid out
-by my employer (Google). These projects will have a CLA check on PRs.
-
-You (or your employer) retain the copyright to your contribution; this simply
-gives us permission to use and redistribute your contributions as part of the
-project.
-
-If you or your current employer have already signed the Google CLA (even if it
-was for a different project), you probably don't need to do it again.
-
-Visit <https://cla.developers.google.com/> to see your current agreements or to
-sign a new one.
-
-### Review our community guidelines and Code of Conduct
+### Review the community guidelines and Code of Conduct
 
 All of my repositories follow [Google's Open Source Community Guidelines] and
 contributors are also expected to follow my [Code of Conduct]. Please be
@@ -180,8 +164,11 @@ Make sure to stage any change or new files or new files.
 git add .
 ```
 
-Commit your code to your branch. For some repositories, messages should follow
+Commit your code to your branch. For most repositories, messages should follow
 the [Conventional Commits] format but this isn't always required.
+
+Commits should include a [Developer Certificate of Origin] (DCO). This can be
+included automatically in commits using the `-s` flag.
 
 ```shell
 git commit -sm "feat: My new feature"
@@ -275,7 +262,7 @@ In general, the following prefixes are supported:
 
 [Security Policy]: SECURITY.md
 [Code of Conduct]: CODE_OF_CONDUCT.md
-[Contributor License Agreement]: https://cla.developers.google.com/about
+[Developer Certificate of Origin]: https://en.wikipedia.org/wiki/Developer_Certificate_of_Origin
 [Google's Open Source Community Guidelines]: https://opensource.google/conduct/
 [Connecting to GitHub with SSH]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 [pull request]: https://docs.github.com/pull-requests
