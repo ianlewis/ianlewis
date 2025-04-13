@@ -1,15 +1,14 @@
-# Contributing to github.com/ianlewis
+# Contributor Guide
 
-This doc describes how to contribute to repositories under
-https://github.com/ianlewis.
+This doc describes how to contribute to this repository.
 
-First, I'd love to accept your patches and contributions to my projects!
+First, We'd love to accept your patches and contributions to my projects!
 
 ## How can I help?
 
-There are many areas in my repositories that need help. These are managed in
-GitHub issues. Please let us know if you are willing to work on the issue and
-how you can contribute.
+There are many areas repositories that need help. These are managed in GitHub
+issues. Please let us know if you are willing to work on the issue and how you
+can contribute.
 
 - For new developers and contributors, please see issues labeled
   `good first issue`. These issues should require minimal background knowledge
@@ -82,29 +81,26 @@ Most of my repositiories make heavy use of `make` during development. This helps
 with automation of tasks locally on your machine. Type `make` to see a full list
 of `Makefile` targets.
 
-Here is an example from the [`todos`](https://github.com/ianlewis/todos)
-repository.
+Here is an example from the
+[`repo-template`](https://github.com/ianlewis/repo-template) repository.
 
 ```shell
 $ make
-todos Makefile
+repo-template Makefile
 Usage: make [COMMAND]
 
   help                 Shows all targets and help from the Makefile (this message).
-Testing
-  unit-test            Runs all unit tests.
-  go-test              Runs Go unit tests.
-  ts-test              Run TypeScript unit tests.
-Benchmarking
-  go-benchmark         Runs Go benchmarks.
 Tools
-  autogen              Runs autogen on code files.
-Linters
+  license-headers      Update license headers.
+Formatting
+  format               Format all files
+  md-format            Format Markdown files.
+  yaml-format          Format YAML files.
+Linting
   lint                 Run all linters.
   actionlint           Runs the actionlint linter.
-  eslint               Runs the eslint linter.
+  zizmor               Runs the zizmor linter.
   markdownlint         Runs the markdownlint linter.
-  golangci-lint        Runs the golangci-lint linter.
   yamllint             Runs the yamllint linter.
 Maintenance
   clean                Delete temporary files.
@@ -135,12 +131,13 @@ make lint
 or individually by name:
 
 ```shell
-make golangci-lint
+make markdownlint
 ```
 
 #### Running tests
 
-You can run all unit tests using the `unit-test` make target:
+Where unit tests exist, you can run all unit tests using the `unit-test` make
+target:
 
 ```shell
 make unit-test
@@ -188,8 +185,8 @@ Once you have your code pushed to your fork you can now created a new
 #### Create a PR
 
 You can
-[create a new pull request via the GitHub UI](https://github.com/ianlewis/todos/compare)
-or via the [`gh` CLI] tool. Create the PR as a
+[create a new pull request via the GitHub UI](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
+or [via the `gh` CLI tool](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=cli). Create the PR as a
 [draft](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
 to start.
 
@@ -204,6 +201,18 @@ your PR. Some will include a checklist. Please review the template doc and mark
 checklist items as complete before finalizing your PR.
 
 Once you have finished you can mark the PR as "Ready for review".
+
+#### Pre-submits
+
+PRs perform number of [GitHub status checks] which run linters and tests. These
+tests must all pass before a PR will be accepted. These tests are located in
+the [`.github/workflows`](.github/workflows) directory and begin with the
+prefix `pre-sumbit`.
+
+Unit tests are run as pre-submit tests in the
+[`pre-submit.units.yml`](.github/workflows/pre-submit.units.yml) file. To run
+these tests locally see the instructions in the [`Running
+Tests`](#running-tests) section.
 
 #### Code reviews
 
@@ -227,8 +236,9 @@ formatting tool.
 1. Go code should be is formatted using [`gofumpt`].
 2. TypeScript code should be [`prettier`].
 3. Python code should be formatted with [`black`].
-4. YAML should be formatted using [`prettier`].
-5. Markdown should be formatted using [`prettier`].
+4. Rust code should be formatted with [`rustfmt`].
+5. YAML should be formatted using [`prettier`].
+6. Markdown should be formatted using [`prettier`].
 
 ### Semantic Versioning
 
@@ -266,10 +276,11 @@ In general, the following prefixes are supported:
 [Google's Open Source Community Guidelines]: https://opensource.google/conduct/
 [Connecting to GitHub with SSH]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 [pull request]: https://docs.github.com/pull-requests
-[`gh` CLI]: https://cli.github.com/
 [About pull request reviews]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews
 [Semantic Versioning]: https://semver.org/
 [Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/
 [`gofumpt`]: https://github.com/mvdan/gofumpt
 [`prettier`]: https://prettier.io/
 [`black`]: https://github.com/psf/black
+[`rustfmt`]: https://github.com/rust-lang/rustfmt
+[GitHub status checks]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks
