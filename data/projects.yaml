@@ -18,17 +18,18 @@ projects:
     image_dark: "slsa/SLSA-logo-horizontal-white.svg"
     url: "https://slsa.dev/"
     description: |
-      [Supply-chain Levels for Software Artifacts](https://slsa.dev/) (SLSA) is
-      a security framework, a checklist of standards and controls to prevent
-      tampering, improve integrity, and secure packages and infrastructure.
-      It’s how you get from “safe enough” to being as resilient as possible, at
-      any link in the chain.
+      <a href="https://slsa.dev/">Supply-chain Levels for Software Artifacts</a>
+      (SLSA) is a security framework, a checklist of standards and controls to
+      prevent tampering, improve integrity, and secure packages and
+      infrastructure. It’s how you get from “safe enough” to being as resilient
+      as possible, at any link in the chain.
 
-      I worked on tooling for GitHub that supports [SLSA v1.0 Build
-      L3](https://slsa.dev/spec/v1.0/levels#build-l3) at
-      [slsa-framework/slsa-github-generator](https://github.com/slsa-framework/slsa-github-generator)
-      and SLSA provenance verification at
-      [slsa-framework/slsa-verifier](https://github.com/slsa-framework/slsa-verifier).
+      I worked on tooling for GitHub that supports <a
+      href="https://slsa.dev/spec/v1.0/levels#build-l3">SLSA v1.0 Build L3</a>
+      at <a
+      href="https://github.com/slsa-framework/slsa-github-generator">slsa-framework/slsa-github-generator</a>
+      and SLSA provenance verification at <a
+      href="https://github.com/slsa-framework/slsa-verifier">slsa-framework/slsa-verifier</a>.
     start_date: "2022-03-01"
     end_date: "2023-08-01"
     status: "completed"
@@ -38,18 +39,20 @@ projects:
     image_dark: "gvisor/gvisor_logo_with_text_on_dark.svg"
     url: "https://gvisor.dev/"
     description: |
-      [gVisor](https://gvisor.dev/) is an open-source Linux-compatible sandbox
-      that runs anywhere existing container tooling does. It enables
-      cloud-native container security and portability. gVisor leverages years of
-      experience isolating production workloads at Google.
+      <a href="https://gvisor.dev/">gVisor</a> is an open-source
+      Linux-compatible sandbox that runs anywhere existing container tooling
+      does. It enables cloud-native container security and portability. gVisor
+      leverages years of experience isolating production workloads at Google.
 
       I made major improvements to gVisor in the areas of Linux kernel
       compatibility, DOS prevention through resource management, crash
       reporting, OCI seccomp support, and Kubernetes integrations including the
-      [minikube
-      addon](https://github.com/kubernetes/minikube/tree/master/deploy/addons/gvisor),
-      [containerd shim](https://github.com/google/gvisor/tree/master/shim),
-      Docker, and [Knative](https://gvisor.dev/docs/tutorials/knative/).
+      <a
+      href="https://github.com/kubernetes/minikube/tree/master/deploy/addons/gvisor">minikube
+      addon</a>, <a
+      href="https://github.com/google/gvisor/tree/master/shim">containerd
+      shim</a>, Docker, and <a
+      href="https://gvisor.dev/docs/tutorials/knative/">Knative</a>.
     start_date: "2018-03-01"
     end_date: "2021-12-31"
     status: "completed"
@@ -59,17 +62,17 @@ projects:
     image_dark: "connpass/connpass_logo_1.png"
     url: "https://connpass.com/"
     description: |
-      [Connpass](https://connpass.com/) is an IT events platform developed while
-      at [BeProud](https://www.beproud.jp/). It made early use of social media
-      connections as a way to recommend events, and provided unique features
-      needed by the IT community.
+      <a href="https://connpass.com/">Connpass</a> is an IT events platform
+      developed while at <a href="https://www.beproud.jp/">BeProud</a>. It made
+      early use of social media connections as a way to recommend events, and
+      provided unique features needed by the IT community.
 
-      I began and led early development starting from scratch through [launch in
-      Oct 2011](https://www.ianlewis.org/jp/connpass), and continuing until
-      2014. I led technical development and design, proposing, designing,
-      developing and launching numerous features including social network
-      integration, multiple attendee types, access analytics, and community
-      group management.
+      I began and led early development starting from scratch through <a
+      href="https://www.ianlewis.org/jp/connpass">launch in Oct 2011</a>, and
+      continuing until 2014. I led technical development and design, proposing,
+      designing, developing and launching numerous features including social
+      network integration, multiple attendee types, access analytics, and
+      community group management.
     start_date: "2011-03-01"
     end_date: "2014-12-15"
     status: "completed"
@@ -79,13 +82,13 @@ projects:
     image_dark: "pyconjp/pyconjp_logo.png"
     url: "https://pycon.jp/"
     description: |
-      [PyCon JP](https://pycon.jp/) is the largest event for the Python
-      Community in Japan which boasts tens of thousands of members thanks in
-      large part to it’s efforts. It is currently supported by the PyCon JP
+      <a href="https://pycon.jp/">PyCon JP</a> is the largest event for the
+      Python Community in Japan which boasts tens of thousands of members thanks
+      in large part to it’s efforts. It is currently supported by the PyCon JP
       non-profit foundation which helps new developers through bootcamps,
       learning events, and sponsorships.
 
-      I [co-founded](https://www.pycon.jp/history.html#pycon-apac-in-singapore)
+      I <a href="https://www.pycon.jp/history.html#pycon-apac-in-singapore">co-founded</a>
       PyCon JP with Manabu Terada, Iqbal Abdullah, and Yasushi Masuda while at
       PyCon Singapore in 2010. After that I held various roles in the event,
       serving mostly as international liason, recruiting international speakers,
