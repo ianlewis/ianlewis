@@ -14,14 +14,15 @@ framework. and the [gVisor](https://gvisor.dev/) container sandbox.
 🗾 I have been based in Tokyo since 2006 and I am fluent in Japanese, passing
 [Japanese-Language Proficiency Test](https://www.jlpt.jp/) (JLPT) N1 in 2013.
 
-## 🛠️ Past Work
+## 🛠️ My Work
 
-☁️ I previously worked for [Google Cloud](https://cloud.google.com/) as a Developer
-Advocate covering [Kubernetes](https://kubernetes.io/) and container security.
-While there I founded [Kubernetes Meetup Tokyo](https://k8sjp.connpass.com/),
-one of the largest local Kubernetes communities in the world. I was a
-contributer to the [SLSA](https://slsa.dev/) supply chain security
-framework and the [gVisor](https://gvisor.dev/) container sandbox.
+☁️ I was an engineer at [Google Cloud](https://cloud.google.com/) working on
+developer experience for [Kubernetes](https://kubernetes.io/), container
+security, and software supply chain security. While there I founded [Kubernetes
+Meetup Tokyo](https://k8sjp.connpass.com/), one of the largest local Kubernetes
+communities in the world. I was a contributer to the [SLSA](https://slsa.dev/)
+supply chain security framework and the [gVisor](https://gvisor.dev/) container
+sandbox.
 
 Prior to Google I focused on developer communities developing
 [Connpass](https://connpass.com), the largest IT meetup event tool in Japan with
@@ -46,7 +47,3 @@ you with:
 - Career advice
 
 You can contact me via my email at [ian@ianlewis.org](mailto:ian@ianlewis.org).
-
-<!-- My public key can be downloaded at -->
-<!-- [ian@ianlewis.org.pem.pub](/ian@ianlewis.org.pem.pub) and viewed at -->
-<!-- [ian@ianlewis.org.pem.pub.txt](/ian@ianlewis.org.pem.pub.txt) -->
