@@ -6,15 +6,15 @@ I'm an engineer based in Tokyo, Japan 🗼
 [TypeScript](https://www.typescriptlang.org/), and Bash but dabble in other
 languages as well. I am learning [Rust](https://www.rust-lang.org/).
 
-🔭 My current interests are in Container Security and [Software Supply Chain
-Security](https://en.wikipedia.org/wiki/Software_supply_chain). I previously
-worked on tooling for the [SLSA](https://slsa.dev/) supply chain security
-framework. and the [gVisor](https://gvisor.dev/) container sandbox.
+🔭 My current interests are in cloud-native infrastructure, defensive security,
+and developer experience. I most recently worked in Container Security and
+[Software Supply Chain
+Security](https://en.wikipedia.org/wiki/Software_supply_chain).
 
 🗾 I have been based in Tokyo since 2006 and I am fluent in Japanese, passing
 [Japanese-Language Proficiency Test](https://www.jlpt.jp/) (JLPT) N1 in 2013.
 
-## 🛠️ My Work
+## 🛠️ Work
 
 ☁️ I was an engineer at [Google Cloud](https://cloud.google.com/) working on
 developer experience for [Kubernetes](https://kubernetes.io/), container
@@ -35,6 +35,10 @@ language version of [App Engine](https://cloud.google.com/appengine/).
 📖 I wrote [Perfect Python](https://amzn.asia/d/bAWDVkka) with other Japanese
 Python community members, and have written articles for [Nikkei Linux
 Magazine](https://info.nikkeibp.co.jp/media/LIN/).
+
+My resume can be downloaded at the following links:
+
+- [English](https://github.com/ianlewis/resume/releases/latest/download/Ian_M_Lewis_Resume.pdf)
 
 ## 💬 Contact
 
