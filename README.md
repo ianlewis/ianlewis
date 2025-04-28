@@ -39,6 +39,7 @@ Magazine](https://info.nikkeibp.co.jp/media/LIN/).
 My resume can be downloaded at the following links:
 
 - [English](https://github.com/ianlewis/resume/releases/latest/download/Ian_M_Lewis_Resume.pdf)
+- [Japanese](https://github.com/ianlewis/resume/releases/latest/download/Ian_M_Lewis_Resume.ja.pdf)
 
 ## 💬 Contact
 
