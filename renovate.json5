@@ -13,32 +13,37 @@
 
     // Add Aqua present to allow updating CLI tools.
     // https://aquaproj.github.io/docs/guides/renovate/
-    "github>aquaproj/aqua-renovate-config#2.7.5",
+    "github>aquaproj/aqua-renovate-config#2.8.1",
+
+    // Update version numbers in Makefile.
+    // https://docs.renovatebot.com/presets-customManagers/#custommanagersmakefileversions
+    "customManagers:makefileVersions",
   ],
 
   // Security alerts/updates happen more frequently.
   vulnerabilityAlerts: {
+    enabled: true,
     schedule: "* 0-4 * * *",
   },
+  osvVulnerabilityAlerts: true,
 
   // Create a new issue for each config warning. By default, Renovate re-opens
   // an existing issue which can be very old and is easily missed. Opening new
   // issues is more intuitive.
   configWarningReuseIssue: false,
 
-  // Update the Aqua version set in the Makefile.
-  customManagers: [
-    {
-      customType: "regex",
-      managerFilePatterns: ["/Makefile/"],
-      matchStrings: ["AQUA_VERSION \\??= *(?<currentValue>\\S+)"],
-      depNameTemplate: "aquaproj/aqua",
-      datasourceTemplate: "github-releases",
-    },
-  ],
-
   // Group various ecosystem updates. Security updates are always separate.
   packageRules: [
+    {
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "aqua",
+      matchFileNames: [".aqua.yaml", ".aqua-checksums.yaml"],
+    },
+    {
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "makefile",
+      matchFileNames: ["Makefile"],
+    },
     {
       matchManagers: ["github-actions"],
       matchUpdateTypes: ["minor", "patch"],
