@@ -32,7 +32,7 @@ this time I was a [Google Developer
 Expert](https://developers.google.com/experts/) specializing in the Python
 language version of [App Engine](https://cloud.google.com/appengine/).
 
-📖 I wrote [Perfect Python](https://amzn.asia/d/bAWDVkka) with other Japanese
+📖 I wrote [Perfect Python](https://www.amazon.co.jp/-/en/%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88-Python-%E6%94%B9%E8%A8%822%E7%89%88-PERFECT-5/dp/429711223X/) with other Japanese
 Python community members, and have written articles for [Nikkei Linux
 Magazine](https://info.nikkeibp.co.jp/media/LIN/).
 
