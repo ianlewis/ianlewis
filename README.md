@@ -20,7 +20,7 @@ Security](https://en.wikipedia.org/wiki/Software_supply_chain).
 developer experience for [Kubernetes](https://kubernetes.io/), container
 security, and software supply chain security. While there I founded [Kubernetes
 Meetup Tokyo](https://k8sjp.connpass.com/), one of the largest local Kubernetes
-communities in the world. I was a contributer to the [SLSA](https://slsa.dev/)
+communities in the world. I was a contributor to the [SLSA](https://slsa.dev/)
 supply chain security framework and the [gVisor](https://gvisor.dev/) container
 sandbox.
 
@@ -51,4 +51,4 @@ you with:
 - Programming
 - Career advice
 
-You can contact me via my email at [ian@ianlewis.org](mailto:ian@ianlewis.org).
+You can contact me via my email at [`ian@ianlewis.org`](mailto:ian@ianlewis.org).
