@@ -12,30 +12,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
----
-extends: default
+name: actionlint
 
-ignore-from-file: [.gitignore]
+on:
+  workflow_call:
 
-rules:
-  braces:
-    max-spaces-inside: 1
+permissions:
+  contents: read
 
-  comments:
-    # prettier formats comments one space from content
-    min-spaces-from-content: 1
+concurrency:
+  group: actionlint-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
-  comments-indentation: false
+jobs:
+  actionlint:
+    name: actionlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        with:
+          submodules: true
+          persist-credentials: false
 
-  document-start: disable
-
-  line-length: disable
-
-  octal-values:
-    forbid-explicit-octal: true
-    forbid-implicit-octal: true
-
-  truthy:
-    allowed-values: ["true", "false"]
-    # Allow Github Actions keys like 'on'
-    check-keys: false
+      - name: actionlint
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: make actionlint
