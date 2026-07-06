@@ -209,7 +209,7 @@ number MAJOR.MINOR.PATCH, increment the:
 ### Conventional Commits
 
 PR titles and commit messages should be in [Conventional Commits] format.
-Usually this is required by not always.
+Usually this is required, but not always.
 
 The following prefixes are supported and are checked using the
 [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
