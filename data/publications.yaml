@@ -73,13 +73,13 @@ publications:
       Containers give developers the ability to isolate applications from one
       another, but that’s not enough. Resource isolation is much different that
       security isolation. How do we make applications deployed in containers
-      more secure? What tools can be we apply to our containers running in
+      more secure? What tools can we apply to our containers running in
       Kubernetes to make them more secure? How can we apply policy to our
       network and services to make sure applications only have access to what
       they need and nothing more?
 
       In this talk, attendees will learn about the risks and attack surfaces of
-      a Kubernetes cluster.  s-We'll look at tools like PodSecurityPolicy,
+      a Kubernetes cluster. We'll look at tools like PodSecurityPolicy,
       SELinux, AppArmor, seccomp, and sandboxed containers in action to improve
       the security of containers. We’ll then go up the stack and learn how to
       apply network policy to containers to further improve security.
@@ -181,7 +181,7 @@ publications:
       Kubernetes has emerged as a leading container management platform not just
       because of its technical capabilities, but also because of the tremendous
       open-source community that has powered its development. How did Kubernetes
-      reach the top 0.01% of all Github projects based on stars analysis? In
+      reach the top 0.01% of all GitHub projects based on stars analysis? In
       this talk, we will describe how the Kubernetes community organizes and
       runs the project, and some of the principles that the community has
       learned over its 2.5 years of rapid growth have been critical to its
@@ -194,7 +194,6 @@ publications:
       - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
         url: "https://lc3china2017.sched.com/"
     url: "https://lc3china2017.sched.com/event/AVBQ/the-kubernetes-api-next-generation-automation-tools-e-ian-lewis-google-inc"
-    video: ""
     abstract: |
       The Kubernetes API provides new ways to build automation tools that are
       highly available and scale to serve clusters with many thousands of nodes.
@@ -213,7 +212,6 @@ publications:
       - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
         url: "https://lc3china2017.sched.com/"
     url: "https://lc3china2017.sched.com/event/AVBJ/scheduling-and-resource-management-in-kubernetes-e-ian-lewis-google"
-    video: ""
     abstract: |
       Effective management of shared resources (CPU, memory, etc.) is critical
       to achieving high utilization and strong isolation in shared clusters.
@@ -347,8 +345,8 @@ publications:
     event:
       - name: "The Inaugural DevOps Exchange - San Francisco"
         url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
-    url: "https://ep2016.europython.eu/conference/talks/deep-learning-with-python-tensorflow.html"
-    video: "https://www.youtube.com/watch?v=yZuxcR8jxlw"
+    url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
+    video: "https://www.youtube.com/watch?v=-L68MpvnV6o"
     abstract: |
       Getting the most out of resources you are paying for can be a challenge.
       Virtualization allowed us to create clusters of machines to run parallel
