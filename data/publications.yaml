@@ -1,0 +1,390 @@
+# Copyright 2026 Ian Lewis
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# TODO(#55): Look up talks from Speaker Deck decks
+#            https://speakerdeck.com/ianlewis
+# TODO(#55): Look up talks from Slideshare decks
+#            https://www.slideshare.net/IanMLewis
+
+publications:
+  - name: "Spicing up Container Image Security with SLSA & GUAC"
+    type: talk
+    date: "2023-02-02T13:55:00-08:00"
+    event:
+      - name: "CloudNativeSecurityCon North America 2023"
+        url: "https://events.linuxfoundation.org/archive/2023/cloudnativesecuritycon-north-america/"
+    video: https://www.youtube.com/watch?v=32IhwdAe0yI
+    url: "https://events.linuxfoundation.org/archive/2023/cloudnativesecuritycon-north-america/program/schedule/"
+    abstract: |
+      Understanding and verifying the content of images that you deploy in
+      production environments is difficult and error prone. Images could be
+      built in an insecure environment, by a malicious actor, or include
+      dependencies that are insecure. Users often don't have enough information
+      to determine if images are trustworthy. Two new tools can help; Supply
+      chain Levels for Software Artifacts (SLSA), and Graph for Understanding
+      Artifact Composition (GUAC). In this talk attendees will learn how to add
+      SLSA provenance metadata to their container images and strongly link
+      images back to their source code on multiple build systems including
+      GitHub Actions and Google Cloud Build. We will also cover how to verify
+      images and their metadata before use; both when running locally and when
+      running images in Kubernetes. Using policy engines like Kyverno and
+      Sigstore policy-controller we can verify an image's source code
+      repository, builder identity, build entry points, and more to protect
+      production environments from malicious images. Finally we'll discuss how
+      to understand your image's supply chain using GUAC. We'll discuss how we
+      can combine SLSA with GUAC to better understand the contents and build
+      provenance of your images from the base layers on down.
+
+  - name: "Tokyo, Python, & Google with Ian Lewis"
+    type: podcast
+    date: "2022-06-08"
+    podcast:
+      - name: "The Ardan Labs Podcast"
+        url: "https://ardanlabs.buzzsprout.com/"
+    url: "https://ardanlabs.buzzsprout.com/1466944/episodes/10753670-tokyo-python-google-with-ian-lewis"
+    video: "https://www.youtube.com/watch?v=EdWTGn6ldhM"
+    abstract: |
+      Ian Lewis is a developer advocate at Google Cloud. In this podcast
+      episode, Ian shares some of his insights on how to be a productive
+      engineer when the codebase is in another language, how to build a
+      successful conference, navigating the job market, containers, security and
+      more.
+
+  - name: "Kubernetes Security Best Practices"
+    type: talk
+    date: "2019-12-12T10:30:00+11:00"
+    event:
+      - name: "Kubernetes Forum Sydney 2019"
+        url: "https://events19.linuxfoundation.org/events/kubernetes-forum-sydney-2019/"
+    url: "https://k8sforumsydney19.sched.com/event/WKgh/kubernetes-security-best-practices-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
+    video: "https://www.youtube.com/watch?v=mhA80viZWgU"
+    abstract: |
+      Containers give developers the ability to isolate applications from one
+      another, but that’s not enough. Resource isolation is much different that
+      security isolation. How do we make applications deployed in containers
+      more secure? What tools can be we apply to our containers running in
+      Kubernetes to make them more secure? How can we apply policy to our
+      network and services to make sure applications only have access to what
+      they need and nothing more?
+
+      In this talk, attendees will learn about the risks and attack surfaces of
+      a Kubernetes cluster.  s-We'll look at tools like PodSecurityPolicy,
+      SELinux, AppArmor, seccomp, and sandboxed containers in action to improve
+      the security of containers. We’ll then go up the stack and learn how to
+      apply network policy to containers to further improve security.
+
+  - name: "Kubernetes Security Best Practices"
+    type: talk
+    date: "2019-12-09T15:40:00+09:00"
+    event:
+      - name: "Kubernetes Forum Seoul 2019"
+        url: "https://events19.linuxfoundation.org/events/kubernetes-forum-seoul-2019/"
+    url: "https://k8sforumseoul19eng.sched.com/event/WIQe/kubernetes-security-best-practices-ian-lewis-google"
+    video: "https://www.youtube.com/watch?v=wqsUfvRyYpw"
+    abstract: |
+      Containers give developers the ability to isolate applications from one
+      another, but that’s not enough. Resource isolation is much different that
+      security isolation. How do we make applications deployed in containers
+      more secure? What tools can be we apply to our containers running in
+      Kubernetes to make them more secure? How can we apply policy to our
+      network and services to make sure applications only have access to what
+      they need and nothing more?
+
+      In this talk, attendees will learn about the risks and attack surfaces of
+      a Kubernetes cluster.  s-We'll look at tools like PodSecurityPolicy,
+      SELinux, AppArmor, seccomp, and sandboxed containers in action to improve
+      the security of containers. We’ll then go up the stack and learn how to
+      apply network policy to containers to further improve security.
+
+  - name: "The Enemy Within: Running Untrusted Code with gVisor"
+    type: talk
+    date: "2019-06-25T11:00:00+08:00"
+    event:
+      - name: "Open Source Summit China 2019"
+        url: "https://events19.lfasiallc.com/events/kubecon-cloudnativecon-china-2019/"
+    url: "https://kccncosschn19eng.sched.com/event/Nrou/the-enemy-within-running-untrusted-code-with-gvisor-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
+    video: "https://www.youtube.com/watch?v=1Ib-rfSzDuM"
+    abstract: |
+      Containers are a great way to isolate application resources but they can
+      fall short when it comes to security isolation. How do you improve the
+      security of your workloads without giving up the properties of containers
+      that you've come to love? There are many approaches to sandboxing
+      containers, such as virtual machines and unikernels, but which is right
+      for you?
+
+      gVisor is a unique open-source sandbox runtime that allows you to run
+      unmodified applications in containers with a higher level of isolation and
+      low overhead. In this talk I will explore the container security model of
+      gVisor and use cases for sandboxing containers. I will discuss various
+      approaches and their tradeoffs before diving into the architecture of
+      gVisor and how it differs from virtual machine based sandboxes. Finally, I
+      will bring it all together with a demo of a minimal serverless platform
+      using gVisor and Kubernetes.
+
+  - name: "Kubernetesセキュリティベストプラクティス"
+    type: talk
+    date: "2018-12-05T17:40:00+09:00"
+    event:
+      - name: "JapanContainerDays v18.12"
+        url: "https://containerdays.jp/"
+    video: "https://www.youtube.com/watch?v=IUB_32bY1VY"
+    slides: "https://speakerdeck.com/ianlewis/kubernetesfalsesekiyuriteifalsebesutopurakuteisu"
+
+  - name: "Kubernetes Security Best Practices"
+    type: talk
+    date: "2018-05-25T11:50:00+10:00"
+    event:
+      - name: "Container Camp AU 2018"
+        url: "https://2018.container.camp/au/"
+    url: "https://2018.container.camp/au/schedule/kubernetes-security-best-practices/"
+    video: "https://www.youtube.com/watch?v=v6a37uzFrCw"
+    abstract: |
+      Kubernetes has become the de-facto orchestration tool but it has some
+      pitfalls to keep in mind with regard to security. How can we make
+      containers more secure? How do we apply existing tools to our containers?
+      How can we apply policy to containers so they only have access to what
+      they need and nothing more? In this talk attendees will learn about
+      specific security risks and see tools like PodSecurityPolicy,
+      SELinux/AppArmor, and seccomp in action to mitigate those risks. Then
+      we’ll go up the stack and learn how to apply network policy to containers
+      and further improve security.
+
+  - name: "Introduction to Kubernetes & update on ver 1.6 by Ian Lewis"
+    type: talk
+    date: "2018-02-28"
+    video: "https://www.youtube.com/watch?v=TZOuZBxadhY"
+
+  # TODO(#55): GoCon India 2017: Getting Plugged in with Go Plugins
+  #            https://www.youtube.com/watch?v=LmfC8-lN_AA
+
+  - name: "Keynote: The Kubernetes Community"
+    type: talk
+    date: "2017-06-20T16:25:00+08:00"
+    event:
+      - name: "ContainerCon China 2017"
+        url: "https://lc3china2017.sched.com/"
+    url: "https://lc3china2017.sched.com/event/ADn7/keynote-the-kubernetes-community-e-ian-lewis-developer-advocate-google"
+    video: "https://www.youtube.com/watch?v=cwcvAbwm-R4"
+    slides: "https://speakerdeck.com/ianlewis/keynote-the-kubernetes-community"
+    abstract: |
+      Kubernetes has emerged as a leading container management platform not just
+      because of its technical capabilities, but also because of the tremendous
+      open-source community that has powered its development. How did Kubernetes
+      reach the top 0.01% of all Github projects based on stars analysis? In
+      this talk, we will describe how the Kubernetes community organizes and
+      runs the project, and some of the principles that the community has
+      learned over its 2.5 years of rapid growth have been critical to its
+      success.
+
+  - name: "The Kubernetes API & Next Generation Automation Tools"
+    type: talk
+    date: "2017-06-20T13:35:00+08:00"
+    event:
+      - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
+        url: "https://lc3china2017.sched.com/"
+    url: "https://lc3china2017.sched.com/event/AVBQ/the-kubernetes-api-next-generation-automation-tools-e-ian-lewis-google-inc"
+    video: ""
+    abstract: |
+      The Kubernetes API provides new ways to build automation tools that are
+      highly available and scale to serve clusters with many thousands of nodes.
+      During this session attendees will learn how to move beyond shell scripts
+      and configuration management tools and leverage cluster level APIs and
+      distributed systems design patterns to build next generation automation
+      tools. Attendees will learn how to extend the Kubernetes API and utilize
+      their own custom declarative configuration to build controllers that
+      automate job scheduling or schedulers that allow you to place jobs based
+      on your rules.
+
+  - name: "Scheduling and Resource Management in Kubernetes"
+    type: talk
+    date: "2017-06-20T11:00:00+08:00"
+    event:
+      - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
+        url: "https://lc3china2017.sched.com/"
+    url: "https://lc3china2017.sched.com/event/AVBJ/scheduling-and-resource-management-in-kubernetes-e-ian-lewis-google"
+    video: ""
+    abstract: |
+      Effective management of shared resources (CPU, memory, etc.) is critical
+      to achieving high utilization and strong isolation in shared clusters.
+      This talk will describe the Kubernetes features that allow you to
+      simultaneously achieve your utilization, isolation, and availability
+      goals. We will also examine the new features in Kubernetes 1.6 that give
+      you fine-grained control over placement of your containers, and describe
+      how to use them to achieve various concrete policy goals. Lastly we will
+      discuss the feature roadmap in this area for the next few releases.
+
+  - name: "Keynote Panel Discussion: The Future is Cloud Native: How Projects Like Kubernetes, Fluentd, OpenTracing, and Linkerd Will Help Shape Modern Infrastructure - Moderated by Chris Aniszczyk, Cloud Native Computing Foundation"
+    type: panel
+    date: "2017-05-31T09:30:00+09:00"
+    event:
+      - name: "Open Source Summit Japan 2017"
+        url: "https://events17.linuxfoundation.org/events/open-source-summit-japan"
+    url: "https://ossjapan2017.sched.com/event/AMSw/keynote-panel-discussion-the-future-is-cloud-native-how-projects-like-kubernetes-fluentd-opentracing-and-linkerd-will-help-shape-modern-infrastructure-moderated-by-chris-aniszczyk-cloud-native-computing-foundation"
+    video: "https://www.youtube.com/watch?v=vU8BjJsxXgw"
+    abstract: |
+      Many of today’s software-defined organizations, like Ticketmaster, ShowMax
+      and VSCO, look to cloud native projects for crucial management and
+      maintenance within their ever-changing infrastructures. Chris Aniszczyk,
+      COO of the Cloud Native Computing Foundation, will moderate an
+      introspective panel – featuring cloud native insiders like Keiko Harada,
+      Ian Lewis and Eduardo Silva – to discuss how these thriving open source
+      projects will help shape modern infrastructure. This expert panel will
+      also address what it takes to develop meaningful cloud native systems, how
+      these technologies fit into the overall stack, how to foster committed
+      maintainers for emerging cloud native projects, and much more.
+
+  - name: "Keynote: The Kubernetes API & Next Generation Automation Tools"
+    type: talk
+    date: "2016-11-04"
+    event:
+      - name: "DevOps Days India 2016"
+        url: "https://devopsdays.org/events/2016-bangalore/welcome/"
+    video: "https://www.youtube.com/watch?v=yWO3Z4-yivg"
+    abstract: |
+      The Kubernetes API provides new ways to build automation tools that are
+      highly available and scale to serve clusters with many thousands of nodes.
+      During this session attendees will learn how to move beyond shell scripts
+      and configuration management tools and leverage cluster level APIs and
+      distributed systems design patterns to build next generation automation
+      tools. Attendees will learn how to extend the Kubernetes API and utilize
+      their own custom declarative configuration to build controllers that
+      automate job scheduling or schedulers that allow you to place jobs based
+      on your rules.
+
+  # TODO(#55): Add PyCon Taiwan: Deep Learning with Python & TensorFlow
+  #            https://www.youtube.com/watch?v=L9RRJAYig_I
+  # TODO(#55): Add PyCon SG: Deep Learning with Python & TensorFlow
+  #            https://www.youtube.com/watch?v=U0ACP9J8vOU
+  # TODO(#55): Add PyData Singapore: Deep Learning with Python & TensorFlow
+  #            https://www.youtube.com/watch?v=DsIMvVoMGu0
+  # TODO(#55): Add PyCon JP: Deep Learning with Python & TensorFlow
+  #            https://www.youtube.com/watch?v=y_zKja1p2Ys
+  # TODO(#55): Add Tech Planet 2015: Kubernetes: Applying Lessons from a Decade of Containers
+  #            https://www.youtube.com/watch?v=_NbJ1jbXmkY
+
+  - name: "Deep Learning with Python & TensorFlow"
+    type: talk
+    date: "2016-08-13T12:40:00+09:00"
+    event:
+      - name: "PyCon APAC 2016"
+        url: "https://2016.pycon.kr/2016apac/"
+    url: "https://2016.pycon.kr/2016apac/program/17"
+    video: "https://www.youtube.com/watch?v=6js_F4MSCEQ"
+    abstract: |
+      Python has lots of scientific, data analysis, and machine learning
+      libraries. But there are many problems. Which do you use? How do they
+      compare to each other? How can you use a model that has been trained in
+      your production application?
+
+      TensorFlow is a new Open Source framework created at Google for building
+      Deep Learning applications. Tensorflow allows you to construct easy to
+      understand data flow graphs which form a mathematical and logical
+      pipeline. Creating data flow graphs allow easier visualization of
+      complicated algorithms as well as running the training operations over
+      multiple hardware GPUs.
+
+      Tensorflow data flow graphs and operations are written in Python. In this
+      talk I will discuss how you can use TensorFlow to create Deep Learning
+      applications. I will discuss how it compares to other Python machine
+      learning libraries like Theano or Chainer. Finally, I will discuss how
+      trained TensorFlow models could be deployed into a production system using
+      TensorFlow Serve.
+
+  - name: "Deep Learning with Python & TensorFlow"
+    type: talk
+    date: "2016-07-22T14:00:00+02:00"
+    event:
+      - name: "EuroPython 2016"
+        url: "https://ep2016.europython.eu/"
+    url: "https://ep2016.europython.eu/conference/talks/deep-learning-with-python-tensorflow.html"
+    video: "https://www.youtube.com/watch?v=yZuxcR8jxlw"
+    abstract: |
+      Python has lots of scientific, data analysis, and machine learning
+      libraries. But there are many problems when starting out on a machine
+      learning project. Which library do you use? How do they compare to each
+      other? How can you use a model that has been trained in your production
+      application?
+
+      TensorFlow is a new Open-Source framework created at Google for building
+      Deep Learning applications. Tensorflow allows you to construct easy to
+      understand data flow graphs in Python which form a mathematical and
+      logical pipeline. Creating data flow graphs allow easier visualization of
+      complicated algorithms as well as running the training operations over
+      multiple hardware GPUs in parallel.
+
+      In this talk I will discuss how you can use TensorFlow to create Deep
+      Learning applications. I will discuss how it compares to other Python
+      machine learning libraries like Theano or Chainer. Finally, I will discuss
+      how trained TensorFlow models could be deployed into a production system
+      using TensorFlow Serve.
+
+  - name: "Bigtable with Ian Lewis"
+    type: podcast
+    date: "2016-03-23"
+    podcast:
+      - name: "Google Cloud Platform Podcast"
+        url: "https://www.gcppodcast.com/"
+    url: "https://www.gcppodcast.com/post/episode-18-bigtable-with-ian-lewis/"
+    abstract: |
+      In the eighteenth episode of this podcast, your hosts Francesc and Mark
+      interview Ian Lewis, a Google Cloud Platform Developer Advocate based in
+      Tokyo about Bigtable.
+
+  - name: "Managing Cross-Team Resources at Scale"
+    type: talk
+    date: "2015-11-11T18:30:00-08:00"
+    event:
+      - name: "The Inaugural DevOps Exchange - San Francisco"
+        url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
+    url: "https://ep2016.europython.eu/conference/talks/deep-learning-with-python-tensorflow.html"
+    video: "https://www.youtube.com/watch?v=yZuxcR8jxlw"
+    abstract: |
+      Getting the most out of resources you are paying for can be a challenge.
+      Virtualization allowed us to create clusters of machines to run parallel
+      workloads easily. But, traditionally, organizations only got about 40%
+      utilization out of those clusters. Containerizing those workloads and
+      running them with a scheduler like Kubernetes can help you get better
+      utilization by running different kinds of workloads together on the same
+      cluster. Even still, you will want some control over how many cluster
+      resources each of your teams or applications use. In this talk I will help
+      explain how to run workloads from multiple teams in the same cluster and
+      limit those teams to a certain amount of resources. I will look at what
+      happens when clusters run out of resources, and walk through how to debug
+      and fix allocation issues. As an added bonus, I will also talk about how
+      applications and services can operate across team boundaries.
+
+  - name: "Building a Scalable Python gRPC Service using Kubernetes"
+    type: talk
+    date: "2015-08-30T16:00:00+09:00"
+    event:
+      - name: "PyCon Korea 2015"
+        url: "https://2015.pycon.kr/2015/"
+    url: "https://2015.pycon.kr/2015/program/52"
+    slides: "https://speakerdeck.com/ianlewis/building-a-scalable-python-grpc-service-using-kubernetes-at-pycon-korea"
+    video: "https://www.youtube.com/watch?v=weQtfmt35UM"
+    abstract: |
+      gRPC is a new high performance, open source, general RPC framework that
+      uses the HTTP/2 standard. The gRPC framework allows you to create small
+      scalable services that fit well into a service oriented architecture.
+      Kubernetes is a cluster manager that allows you to create services that
+      can be scaled easily. Service oriented architecture is a key part of how
+      many companies, like Google, operate their infrastructure to provide
+      robust, and highly available services that operate at a consistently high
+      level of performance for end users.
+
+      In this talk I will talk about how to use Python to create a scalable gRPC
+      service and then how to actually manage and scale it using the Kubernetes
+      cluster manager. Using Python allows you to make use of the extensive set
+      of Python libraries publicly available. Python is a flexible language that
+      can be very efficient when tuned properly.
