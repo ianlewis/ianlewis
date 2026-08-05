@@ -17,15 +17,235 @@
 # TODO(#55): Look up talks from Slideshare decks
 #            https://www.slideshare.net/IanMLewis
 
+events:
+  - &google-cloud-next-2024
+    name: "Google Cloud Next 2024"
+    url: "https://cloud.withgoogle.com/next/"
+    location:
+      city: Las Vegas
+      state: Nevada
+      country: United States
+    start_date: "2024-04-09"
+    end_date: "2024-04-11"
+
+  - &cloudnativesecuritycon-na-2023
+    name: "CloudNativeSecurityCon North America 2023"
+    url: "https://events.linuxfoundation.org/archive/2023/cloudnativesecuritycon-north-america/"
+    location:
+      city: Seattle
+      state: Washington
+      country: United States
+    start_date: "2023-02-01"
+    end_date: "2023-02-02"
+
+  - &kubernetes-forum-seoul-2019
+    name: "Kubernetes Forum Seoul 2019"
+    url: "https://events19.linuxfoundation.org/events/kubernetes-forum-seoul-2019/"
+    location:
+      city: Seoul
+      country: South Korea
+    start_date: "2019-12-09"
+    end_date: "2019-12-09"
+
+  - &kubernetes-forum-sydney-2019
+    name: "Kubernetes Forum Sydney 2019"
+    url: "https://events19.linuxfoundation.org/events/kubernetes-forum-sydney-2019/"
+    location:
+      city: Sydney
+      state: New South Wales
+      country: Australia
+    start_date: "2019-12-12"
+    end_date: "2019-12-13"
+
+  - &container-camp-au-2018
+    name: "Container Camp AU 2018"
+    url: "https://2018.container.camp/au/"
+    location:
+      city: Sydney
+      state: New South Wales
+      country: Australia
+    start_date: "2018-05-23"
+    end_date: "2018-05-25"
+
+  - &open-source-summit-china-2019
+    name: "Open Source Summit China 2019"
+    url: "https://events19.lfasiallc.com/events/kubecon-cloudnativecon-china-2019/"
+    location:
+      city: Shanghai
+      country: China
+    start_date: "2019-06-25"
+    end_date: "2019-06-26"
+
+  - &japan-container-days-v18-12
+    name: "JapanContainerDays v18.12"
+    url: "https://containerdays.jp/"
+    location:
+      city: Tokyo
+      country: Japan
+    start_date: "2018-12-04"
+    end_date: "2018-12-05"
+
+  - &gophercon-india-2017
+    name: "GopherCon India 2017"
+    # This link appears to be dead.
+    # url: "https://gopherconindia.org/2017/"
+    location:
+      city: Pune
+      country: India
+    start_date: "2017-02-24"
+    end_date: "2017-02-25"
+
+  - &lc3china-2017
+    name: "LinuxCon + ContainerCon + CloudOpen China 2017"
+    # This link appears to be dead.
+    # url: "https://www.lfopensource.cn/linuxcon-containercon-cloudopen-china"
+    url: "https://lc3china2017.sched.com/"
+    location:
+      city: Beijing
+      country: China
+    start_date: "2017-06-19"
+    end_date: "2017-06-20"
+
+  - &open-source-summit-japan-2017
+    name: "Open Source Summit Japan 2017"
+    # This link appears to be dead.
+    # url: "https://events17.linuxfoundation.org/events/open-source-summit-japan"
+    url: "https://ossjapan2017.sched.com/"
+    location:
+      city: Tokyo
+      country: Japan
+    start_date: "2017-05-31"
+    end_date: "2017-06-02"
+
+  - &pydata-sg-02-2017
+    name: "PyData Meetup Singapore - February 2017"
+    url: "https://www.meetup.com/pydata-sg/events/235981769/"
+    location:
+      city: Singapore
+      country: Singapore
+    start_date: "2017-02-20"
+    end_date: "2017-02-20"
+
+  - &devops-days-india-2016
+    name: "DevOps Days India 2016"
+    url: "https://devopsdays.org/events/2016-bangalore/welcome/"
+    location:
+      city: Bangalore
+      country: India
+    start_date: "2016-11-04"
+    end_date: "2016-11-05"
+
+  - &pycon-jp-2016
+    name: "PyCon JP 2016"
+    url: "https://pycon.jp/2016/"
+    location:
+      city: Tokyo
+      country: Japan
+    start_date: "2016-09-21"
+    end_date: "2016-09-22"
+
+  - &pycon-apac-2016
+    name: "PyCon APAC 2016"
+    url: "https://2016.pycon.kr/2016apac/"
+    location:
+      city: Seoul
+      country: South Korea
+    start_date: "2016-08-13"
+    end_date: "2016-08-15"
+
+  - &europython-2016
+    name: "EuroPython 2016"
+    url: "https://ep2016.europython.eu/"
+    location:
+      city: Bilbao
+      country: Spain
+    start_date: "2016-07-17"
+    end_date: "2016-07-24"
+
+  - &pycon-tw-2016
+    name: "PyCon Taiwan 2016"
+    url: "https://tw.pycon.org/2016/"
+    location:
+      city: Taipei
+      country: Taiwan
+    start_date: "2016-06-03"
+    end_date: "2016-06-05"
+
+  - &pycon-sg-2016
+    name: "PyCon Singapore 2016"
+    # This is the link to the latest conference.
+    url: "https://pycon.sg/"
+    location:
+      city: Singapore
+      country: Singapore
+    start_date: "2016-06-23"
+    end_date: "2016-06-25"
+
+  - &the-inaugural-devops-exchange-san-francisco
+    name: "The Inaugural DevOps Exchange - San Francisco"
+    url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
+    location:
+      city: San Francisco
+      state: California
+      country: United States
+    start_date: "2015-11-11"
+    end_date: "2015-11-11"
+
+  - &tech-planet-2015
+    name: "Tech Planet 2015"
+    # This url appears to be dead.
+    # url: "http://techplanet.skplanet.com"
+    location:
+      city: Seoul
+      country: South Korea
+    # This date is taken from the YouTube video. I'm not sure exactly what date
+    # this was.
+    start_date: "2015-10-30"
+    end_date: "2015-10-30"
+
+  - &pycon-korea-2015
+    name: "PyCon Korea 2015"
+    url: "https://2015.pycon.kr/2015/"
+    location:
+      city: Seoul
+      country: South Korea
+    start_date: "2015-08-29"
+    end_date: "2015-08-30"
+
+  - &pycon-apac-2015
+    name: "PyCon APAC 2015"
+    url: "https://tw.pycon.org/2015apac/"
+    location:
+      city: Taipei
+      country: Taiwan
+    start_date: "2015-06-05"
+    end_date: "2015-06-07"
+
 publications:
+  - name: "Least privilege: Move beyond default service accounts"
+    type: talk
+    sessions:
+      - event: *google-cloud-next-2024
+        # I'm not sure exactly what day the talk was given.
+        date: "2024-04-09"
+        video: "https://www.youtube.com/watch?v=sBiZukrBDMo"
+    abstract:
+      Default service accounts provide the flexibility to get started, but often
+      have excess permissions when used in production. How do we find a balance
+      between ease of use for developers and the security demands in production
+      environments? This session covers the common pitfalls that can occur with
+      default service accounts, how to move beyond default service accounts and
+      use custom IAM roles to follow the principle of least privilege, and how
+      to automate alerts to balance the needs of developers and security teams.
+
   - name: "Spicing up Container Image Security with SLSA & GUAC"
     type: talk
-    date: "2023-02-02T13:55:00-08:00"
-    event:
-      - name: "CloudNativeSecurityCon North America 2023"
-        url: "https://events.linuxfoundation.org/archive/2023/cloudnativesecuritycon-north-america/"
-    video: https://www.youtube.com/watch?v=32IhwdAe0yI
-    url: "https://events.linuxfoundation.org/archive/2023/cloudnativesecuritycon-north-america/program/schedule/"
+    sessions:
+      - event: *cloudnativesecuritycon-na-2023
+        date: "2023-02-02T13:55:00-08:00"
+        url: "https://cloudnativesecurityconna23.sched.com/event/1FV3e/spicing-up-container-image-security-with-slsa-guac-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
+        video: "https://www.youtube.com/watch?v=32IhwdAe0yI"
+        language: en
     abstract: |
       Understanding and verifying the content of images that you deploy in
       production environments is difficult and error prone. Images could be
@@ -48,12 +268,13 @@ publications:
 
   - name: "Tokyo, Python, & Google with Ian Lewis"
     type: podcast
-    date: "2022-06-08"
-    podcast:
-      - name: "The Ardan Labs Podcast"
+    session:
+      podcast:
+        name: "The Ardan Labs Podcast"
         url: "https://ardanlabs.buzzsprout.com/"
-    url: "https://ardanlabs.buzzsprout.com/1466944/episodes/10753670-tokyo-python-google-with-ian-lewis"
-    video: "https://www.youtube.com/watch?v=EdWTGn6ldhM"
+      date: "2022-06-08"
+      url: "https://ardanlabs.buzzsprout.com/1466944/episodes/10753670-tokyo-python-google-with-ian-lewis"
+      video: "https://www.youtube.com/watch?v=EdWTGn6ldhM"
     abstract: |
       Ian Lewis is a developer advocate at Google Cloud. In this podcast
       episode, Ian shares some of his insights on how to be a productive
@@ -63,12 +284,22 @@ publications:
 
   - name: "Kubernetes Security Best Practices"
     type: talk
-    date: "2019-12-12T10:30:00+11:00"
-    event:
-      - name: "Kubernetes Forum Sydney 2019"
-        url: "https://events19.linuxfoundation.org/events/kubernetes-forum-sydney-2019/"
-    url: "https://k8sforumsydney19.sched.com/event/WKgh/kubernetes-security-best-practices-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
-    video: "https://www.youtube.com/watch?v=mhA80viZWgU"
+    sessions:
+      - event: *kubernetes-forum-seoul-2019
+        date: "2019-12-09T15:40:00+09:00"
+        url: "https://k8sforumseoul19eng.sched.com/event/WIQe/kubernetes-security-best-practices-ian-lewis-google"
+        video: "https://www.youtube.com/watch?v=wqsUfvRyYpw"
+        language: en
+      - event: *kubernetes-forum-sydney-2019
+        date: "2019-12-12T10:30:00+11:00"
+        url: "https://k8sforumsydney19.sched.com/event/WKgh/kubernetes-security-best-practices-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
+        video: "https://www.youtube.com/watch?v=mhA80viZWgU"
+        language: en
+      - event: *container-camp-au-2018
+        date: "2018-05-25T11:50:00+10:00"
+        url: "https://2018.container.camp/au/schedule/kubernetes-security-best-practices/"
+        video: "https://www.youtube.com/watch?v=v6a37uzFrCw"
+        language: en
     abstract: |
       Containers give developers the ability to isolate applications from one
       another, but that’s not enough. Resource isolation is much different that
@@ -84,37 +315,14 @@ publications:
       the security of containers. We’ll then go up the stack and learn how to
       apply network policy to containers to further improve security.
 
-  - name: "Kubernetes Security Best Practices"
-    type: talk
-    date: "2019-12-09T15:40:00+09:00"
-    event:
-      - name: "Kubernetes Forum Seoul 2019"
-        url: "https://events19.linuxfoundation.org/events/kubernetes-forum-seoul-2019/"
-    url: "https://k8sforumseoul19eng.sched.com/event/WIQe/kubernetes-security-best-practices-ian-lewis-google"
-    video: "https://www.youtube.com/watch?v=wqsUfvRyYpw"
-    abstract: |
-      Containers give developers the ability to isolate applications from one
-      another, but that’s not enough. Resource isolation is much different that
-      security isolation. How do we make applications deployed in containers
-      more secure? What tools can be we apply to our containers running in
-      Kubernetes to make them more secure? How can we apply policy to our
-      network and services to make sure applications only have access to what
-      they need and nothing more?
-
-      In this talk, attendees will learn about the risks and attack surfaces of
-      a Kubernetes cluster.  s-We'll look at tools like PodSecurityPolicy,
-      SELinux, AppArmor, seccomp, and sandboxed containers in action to improve
-      the security of containers. We’ll then go up the stack and learn how to
-      apply network policy to containers to further improve security.
-
   - name: "The Enemy Within: Running Untrusted Code with gVisor"
     type: talk
-    date: "2019-06-25T11:00:00+08:00"
-    event:
-      - name: "Open Source Summit China 2019"
-        url: "https://events19.lfasiallc.com/events/kubecon-cloudnativecon-china-2019/"
-    url: "https://kccncosschn19eng.sched.com/event/Nrou/the-enemy-within-running-untrusted-code-with-gvisor-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
-    video: "https://www.youtube.com/watch?v=1Ib-rfSzDuM"
+    sessions:
+      - event: *open-source-summit-china-2019
+        date: "2019-06-25T11:00:00+08:00"
+        url: "https://kccncosschn19eng.sched.com/event/Nrou/the-enemy-within-running-untrusted-code-with-gvisor-ian-lewis-google?iframe=yes&w=100%&sidebar=yes&bg=no"
+        video: "https://www.youtube.com/watch?v=1Ib-rfSzDuM"
+        language: en
     abstract: |
       Containers are a great way to isolate application resources but they can
       fall short when it comes to security isolation. How do you improve the
@@ -134,49 +342,43 @@ publications:
 
   - name: "Kubernetesセキュリティベストプラクティス"
     type: talk
-    date: "2018-12-05T17:40:00+09:00"
-    event:
-      - name: "JapanContainerDays v18.12"
-        url: "https://containerdays.jp/"
-    video: "https://www.youtube.com/watch?v=IUB_32bY1VY"
-    slides: "https://speakerdeck.com/ianlewis/kubernetesfalsesekiyuriteifalsebesutopurakuteisu"
-
-  - name: "Kubernetes Security Best Practices"
-    type: talk
-    date: "2018-05-25T11:50:00+10:00"
-    event:
-      - name: "Container Camp AU 2018"
-        url: "https://2018.container.camp/au/"
-    url: "https://2018.container.camp/au/schedule/kubernetes-security-best-practices/"
-    video: "https://www.youtube.com/watch?v=v6a37uzFrCw"
-    abstract: |
-      Kubernetes has become the de-facto orchestration tool but it has some
-      pitfalls to keep in mind with regard to security. How can we make
-      containers more secure? How do we apply existing tools to our containers?
-      How can we apply policy to containers so they only have access to what
-      they need and nothing more? In this talk attendees will learn about
-      specific security risks and see tools like PodSecurityPolicy,
-      SELinux/AppArmor, and seccomp in action to mitigate those risks. Then
-      we’ll go up the stack and learn how to apply network policy to containers
-      and further improve security.
+    sessions:
+      - event: *japan-container-days-v18-12
+        date: "2018-12-05T17:40:00+09:00"
+        video: "https://www.youtube.com/watch?v=IUB_32bY1VY"
+        slides: "https://speakerdeck.com/ianlewis/kubernetesfalsesekiyuriteifalsebesutopurakuteisu"
+        language: en
 
   - name: "Introduction to Kubernetes & update on ver 1.6 by Ian Lewis"
     type: talk
-    date: "2018-02-28"
-    video: "https://www.youtube.com/watch?v=TZOuZBxadhY"
+    sessions:
+      - event:
+          name: "Special Session @ Google Mumbai"
+          start_date: "2018-02-28"
+          end_date: "2018-02-28"
+          location:
+            city: Mumbai
+            country: India
+        date: "2018-02-28"
+        video: "https://www.youtube.com/watch?v=TZOuZBxadhY"
+        language: en
 
-  # TODO(#55): GoCon India 2017: Getting Plugged in with Go Plugins
-  #            https://www.youtube.com/watch?v=LmfC8-lN_AA
+  - name: "Getting Plugged in with Go Plugins"
+    type: talk
+    sessions:
+      - event: *gophercon-india-2017
+        date: "2017-02-25"
+        video: "https://www.youtube.com/watch?v=LmfC8-lN_AA"
+        slides: "https://speakerdeck.com/ianlewis/getting-plugged-in-with-go-1-dot-8-plugins-at-gophercon-india"
 
   - name: "Keynote: The Kubernetes Community"
     type: talk
-    date: "2017-06-20T16:25:00+08:00"
-    event:
-      - name: "ContainerCon China 2017"
-        url: "https://lc3china2017.sched.com/"
-    url: "https://lc3china2017.sched.com/event/ADn7/keynote-the-kubernetes-community-e-ian-lewis-developer-advocate-google"
-    video: "https://www.youtube.com/watch?v=cwcvAbwm-R4"
-    slides: "https://speakerdeck.com/ianlewis/keynote-the-kubernetes-community"
+    sessions:
+      - event: *lc3china-2017
+        date: "2017-06-20T16:25:00+08:00"
+        url: "https://lc3china2017.sched.com/event/ADn7/keynote-the-kubernetes-community-e-ian-lewis-developer-advocate-google"
+        video: "https://www.youtube.com/watch?v=cwcvAbwm-R4"
+        slides: "https://speakerdeck.com/ianlewis/keynote-the-kubernetes-community"
     abstract: |
       Kubernetes has emerged as a leading container management platform not just
       because of its technical capabilities, but also because of the tremendous
@@ -189,11 +391,10 @@ publications:
 
   - name: "The Kubernetes API & Next Generation Automation Tools"
     type: talk
-    date: "2017-06-20T13:35:00+08:00"
-    event:
-      - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
-        url: "https://lc3china2017.sched.com/"
-    url: "https://lc3china2017.sched.com/event/AVBQ/the-kubernetes-api-next-generation-automation-tools-e-ian-lewis-google-inc"
+    sessions:
+      - event: *lc3china-2017
+        date: "2017-06-20T13:35:00+08:00"
+        url: "https://lc3china2017.sched.com/event/AVBQ/the-kubernetes-api-next-generation-automation-tools-e-ian-lewis-google-inc"
     abstract: |
       The Kubernetes API provides new ways to build automation tools that are
       highly available and scale to serve clusters with many thousands of nodes.
@@ -207,11 +408,10 @@ publications:
 
   - name: "Scheduling and Resource Management in Kubernetes"
     type: talk
-    date: "2017-06-20T11:00:00+08:00"
-    event:
-      - name: "LinuxCon + ContainerCon + CloudOpen China 2017"
-        url: "https://lc3china2017.sched.com/"
-    url: "https://lc3china2017.sched.com/event/AVBJ/scheduling-and-resource-management-in-kubernetes-e-ian-lewis-google"
+    sessions:
+      - event: *lc3china-2017
+        date: "2017-06-20T11:00:00+08:00"
+        url: "https://lc3china2017.sched.com/event/AVBJ/scheduling-and-resource-management-in-kubernetes-e-ian-lewis-google"
     abstract: |
       Effective management of shared resources (CPU, memory, etc.) is critical
       to achieving high utilization and strong isolation in shared clusters.
@@ -222,14 +422,13 @@ publications:
       how to use them to achieve various concrete policy goals. Lastly we will
       discuss the feature roadmap in this area for the next few releases.
 
-  - name: "Keynote Panel Discussion: The Future is Cloud Native: How Projects Like Kubernetes, Fluentd, OpenTracing, and Linkerd Will Help Shape Modern Infrastructure - Moderated by Chris Aniszczyk, Cloud Native Computing Foundation"
+  - name: "Keynote Panel Discussion: The Future is Cloud Native: How Projects Like Kubernetes, Fluentd, OpenTracing, and Linkerd Will Help Shape Modern Infrastructure - Moderated by Chris Aniszczyk"
     type: panel
-    date: "2017-05-31T09:30:00+09:00"
-    event:
-      - name: "Open Source Summit Japan 2017"
-        url: "https://events17.linuxfoundation.org/events/open-source-summit-japan"
-    url: "https://ossjapan2017.sched.com/event/AMSw/keynote-panel-discussion-the-future-is-cloud-native-how-projects-like-kubernetes-fluentd-opentracing-and-linkerd-will-help-shape-modern-infrastructure-moderated-by-chris-aniszczyk-cloud-native-computing-foundation"
-    video: "https://www.youtube.com/watch?v=vU8BjJsxXgw"
+    sessions:
+      - event: *open-source-summit-japan-2017
+        date: "2017-05-31T09:30:00+09:00"
+        url: "https://ossjapan2017.sched.com/event/AMSw/keynote-panel-discussion-the-future-is-cloud-native-how-projects-like-kubernetes-fluentd-opentracing-and-linkerd-will-help-shape-modern-infrastructure-moderated-by-chris-aniszczyk-cloud-native-computing-foundation"
+        video: "https://www.youtube.com/watch?v=vU8BjJsxXgw"
     abstract: |
       Many of today’s software-defined organizations, like Ticketmaster, ShowMax
       and VSCO, look to cloud native projects for crucial management and
@@ -244,11 +443,11 @@ publications:
 
   - name: "Keynote: The Kubernetes API & Next Generation Automation Tools"
     type: talk
-    date: "2016-11-04"
-    event:
-      - name: "DevOps Days India 2016"
-        url: "https://devopsdays.org/events/2016-bangalore/welcome/"
-    video: "https://www.youtube.com/watch?v=yWO3Z4-yivg"
+    sessions:
+      - event: *devops-days-india-2016
+        date: "2016-11-04"
+        video: "https://www.youtube.com/watch?v=yWO3Z4-yivg"
+        slides: "https://speakerdeck.com/ianlewis/the-kubernetes-api-and-next-generation-automation-tools-at-devopsdays-india"
     abstract: |
       The Kubernetes API provides new ways to build automation tools that are
       highly available and scale to serve clusters with many thousands of nodes.
@@ -260,25 +459,34 @@ publications:
       automate job scheduling or schedulers that allow you to place jobs based
       on your rules.
 
-  # TODO(#55): Add PyCon Taiwan: Deep Learning with Python & TensorFlow
-  #            https://www.youtube.com/watch?v=L9RRJAYig_I
-  # TODO(#55): Add PyCon SG: Deep Learning with Python & TensorFlow
-  #            https://www.youtube.com/watch?v=U0ACP9J8vOU
-  # TODO(#55): Add PyData Singapore: Deep Learning with Python & TensorFlow
-  #            https://www.youtube.com/watch?v=DsIMvVoMGu0
-  # TODO(#55): Add PyCon JP: Deep Learning with Python & TensorFlow
-  #            https://www.youtube.com/watch?v=y_zKja1p2Ys
-  # TODO(#55): Add Tech Planet 2015: Kubernetes: Applying Lessons from a Decade of Containers
-  #            https://www.youtube.com/watch?v=_NbJ1jbXmkY
-
   - name: "Deep Learning with Python & TensorFlow"
     type: talk
-    date: "2016-08-13T12:40:00+09:00"
-    event:
-      - name: "PyCon APAC 2016"
-        url: "https://2016.pycon.kr/2016apac/"
-    url: "https://2016.pycon.kr/2016apac/program/17"
-    video: "https://www.youtube.com/watch?v=6js_F4MSCEQ"
+    sessions:
+      - event: *pydata-sg-02-2017
+        date: "2017-02-20T20:10:00+08:00"
+        url: "https://www.meetup.com/pydata-sg/events/235981769/"
+        video: "https://www.youtube.com/watch?v=DsIMvVoMGu0"
+      - event: *pycon-sg-2016
+        # This could have been on day 1 or day 2.
+        date: "2016-06-24"
+        video: "https://www.youtube.com/watch?v=U0ACP9J8vOU"
+      - event: *pycon-jp-2016
+        date: "2016-09-21T13:30:00+09:00"
+        url: "https://pycon.jp/2016/en/schedule/presentation/20/index.html"
+        video: "https://www.youtube.com/watch?v=y_zKja1p2Ys"
+      - event: *pycon-apac-2016
+        date: "2016-08-13T12:40:00+09:00"
+        url: "https://2016.pycon.kr/2016apac/program/17"
+        video: "https://www.youtube.com/watch?v=6js_F4MSCEQ"
+      - event: *europython-2016
+        date: "2016-07-22T14:00:00+02:00"
+        url: "https://ep2016.europython.eu/conference/talks/deep-learning-with-python-tensorflow.html"
+        slides: "https://speakerdeck.com/ianlewis/deep-learning-with-python-and-tensorflow"
+        video: "https://www.youtube.com/watch?v=yZuxcR8jxlw"
+      - event: *pycon-tw-2016
+        date: "2016-06-04T13:00:00+08:00"
+        url: "https://tw.pycon.org/2016/en-us/events/talk/56874546946375700/"
+        video: "https://www.youtube.com/watch?v=L9RRJAYig_I"
     abstract: |
       Python has lots of scientific, data analysis, and machine learning
       libraries. But there are many problems. Which do you use? How do they
@@ -299,41 +507,14 @@ publications:
       trained TensorFlow models could be deployed into a production system using
       TensorFlow Serve.
 
-  - name: "Deep Learning with Python & TensorFlow"
-    type: talk
-    date: "2016-07-22T14:00:00+02:00"
-    event:
-      - name: "EuroPython 2016"
-        url: "https://ep2016.europython.eu/"
-    url: "https://ep2016.europython.eu/conference/talks/deep-learning-with-python-tensorflow.html"
-    video: "https://www.youtube.com/watch?v=yZuxcR8jxlw"
-    abstract: |
-      Python has lots of scientific, data analysis, and machine learning
-      libraries. But there are many problems when starting out on a machine
-      learning project. Which library do you use? How do they compare to each
-      other? How can you use a model that has been trained in your production
-      application?
-
-      TensorFlow is a new Open-Source framework created at Google for building
-      Deep Learning applications. Tensorflow allows you to construct easy to
-      understand data flow graphs in Python which form a mathematical and
-      logical pipeline. Creating data flow graphs allow easier visualization of
-      complicated algorithms as well as running the training operations over
-      multiple hardware GPUs in parallel.
-
-      In this talk I will discuss how you can use TensorFlow to create Deep
-      Learning applications. I will discuss how it compares to other Python
-      machine learning libraries like Theano or Chainer. Finally, I will discuss
-      how trained TensorFlow models could be deployed into a production system
-      using TensorFlow Serve.
-
   - name: "Bigtable with Ian Lewis"
     type: podcast
-    date: "2016-03-23"
-    podcast:
-      - name: "Google Cloud Platform Podcast"
+    session:
+      podcast:
+        name: "Google Cloud Platform Podcast"
         url: "https://www.gcppodcast.com/"
-    url: "https://www.gcppodcast.com/post/episode-18-bigtable-with-ian-lewis/"
+      date: "2016-03-23"
+      url: "https://www.gcppodcast.com/post/episode-18-bigtable-with-ian-lewis/"
     abstract: |
       In the eighteenth episode of this podcast, your hosts Francesc and Mark
       interview Ian Lewis, a Google Cloud Platform Developer Advocate based in
@@ -341,12 +522,11 @@ publications:
 
   - name: "Managing Cross-Team Resources at Scale"
     type: talk
-    date: "2015-11-11T18:30:00-08:00"
-    event:
-      - name: "The Inaugural DevOps Exchange - San Francisco"
+    sessions:
+      - event: *the-inaugural-devops-exchange-san-francisco
+        date: "2015-11-11T18:30:00-08:00"
         url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
-    url: "https://www.meetup.com/devops-exchange-sanfrancisco/events/226533979/"
-    video: "https://www.youtube.com/watch?v=-L68MpvnV6o"
+        video: "https://www.youtube.com/watch?v=-L68MpvnV6o"
     abstract: |
       Getting the most out of resources you are paying for can be a challenge.
       Virtualization allowed us to create clusters of machines to run parallel
@@ -362,15 +542,30 @@ publications:
       and fix allocation issues. As an added bonus, I will also talk about how
       applications and services can operate across team boundaries.
 
+  - name: "Kubernetes: Applying Lessons from a Decade of Containers"
+    type: talk
+    sessions:
+      - event: *tech-planet-2015
+        # This is taken from the YouTube video. I'm not sure exactly what date
+        # this was.
+        date: "2015-10-30"
+        # These are the slides from the GCPUG Osaka talk done earlier in the
+        # year.
+        slides: "https://speakerdeck.com/ianlewis/kubernetes-applying-lessons-from-a-decade-of-containers-at-gcpug-osaka"
+        video: "https://www.youtube.com/watch?v=_NbJ1jbXmkY"
+
   - name: "Building a Scalable Python gRPC Service using Kubernetes"
     type: talk
-    date: "2015-08-30T16:00:00+09:00"
-    event:
-      - name: "PyCon Korea 2015"
-        url: "https://2015.pycon.kr/2015/"
-    url: "https://2015.pycon.kr/2015/program/52"
-    slides: "https://speakerdeck.com/ianlewis/building-a-scalable-python-grpc-service-using-kubernetes-at-pycon-korea"
-    video: "https://www.youtube.com/watch?v=weQtfmt35UM"
+    sessions:
+      - event: *pycon-korea-2015
+        date: "2015-08-30T16:00:00+09:00"
+        url: "https://2015.pycon.kr/2015/program/52"
+        slides: "https://speakerdeck.com/ianlewis/building-a-scalable-python-grpc-service-using-kubernetes-at-pycon-korea"
+        video: "https://www.youtube.com/watch?v=weQtfmt35UM"
+      - event: *pycon-apac-2015
+        date: "2015-08-30T16:00:00+09:00"
+        url: "https://tw.pycon.org/2015apac/zh/program/65.html"
+        video: "https://www.youtube.com/watch?v=RvUP7vX2P4s"
     abstract: |
       gRPC is a new high performance, open source, general RPC framework that
       uses the HTTP/2 standard. The gRPC framework allows you to create small
