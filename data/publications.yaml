@@ -325,6 +325,7 @@ events:
 publications:
   - name: "Least privilege: Move beyond default service accounts"
     type: talk
+    video: "https://www.youtube.com/watch?v=sBiZukrBDMo"
     sessions:
       - event: *google-cloud-next-2024
         # I'm not sure exactly what day the talk was given.
@@ -370,6 +371,7 @@ publications:
 
   - name: "Tokyo, Python, & Google with Ian Lewis"
     type: podcast
+    video: "https://www.youtube.com/watch?v=EdWTGn6ldhM"
     session:
       podcast:
         name: "The Ardan Labs Podcast"
@@ -534,6 +536,8 @@ publications:
 
   - name: "Keynote: The Kubernetes Community"
     type: talk
+    video: "https://www.youtube.com/watch?v=cwcvAbwm-R4"
+    slides: "https://speakerdeck.com/ianlewis/keynote-the-kubernetes-community"
     sessions:
       - event: *lc3china-2017
         date: "2017-06-20T16:25:00+08:00"
@@ -569,6 +573,7 @@ publications:
 
   - name: "Scheduling and Resource Management in Kubernetes"
     type: talk
+    slides: "https://speakerdeck.com/ianlewis/scheduling-and-resource-management-in-kubernetes"
     sessions:
       - event: *lc3china-2017
         date: "2017-06-20T11:00:00+08:00"
