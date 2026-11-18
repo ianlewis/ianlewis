@@ -123,6 +123,10 @@
         "project.optional-dependencies",
         "requires-python",
       ],
+
+      // NOTE: all Python requirements are dev requirements.
+      automerge: true,
+      platformAutomerge: true,
     },
     // NOTE: dependency-groups (PEP 725) in pep621 are sometimes used to specify
     //       development dependencies. However, they sometimes also include
@@ -170,6 +174,10 @@
       matchManagers: ["npm"],
       matchDepTypes: ["dependencies"],
       matchUpdateTypes: ["minor", "patch"],
+
+      // NOTE: All npm dependencies are dev dependencies.
+      automerge: true,
+      platformAutomerge: true,
     },
     {
       groupName: "npm dev",
