@@ -17,16 +17,12 @@ include include.mk
 ## Build
 #####################################################################
 
-# TODO: Add all target dependencies.
 .PHONY: all
 all: test ## Build everything.
-	@echo "Nothing to build."
-	exit 1
 
 ## Testing
 #####################################################################
 
-# TODO: Add test target dependencies.
 .PHONY: test
 test: lint ## Run all tests.
 
